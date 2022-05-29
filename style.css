@@ -1,0 +1,197 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body{
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50% 35%, 75% 85%;
+}
+
+/*container*/
+
+.container {
+    position: relative;
+    margin: 8% 12%;
+    margin-right: 8%;
+}
+
+/*top and bottom sections*/
+/*section 1*/
+.section-one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left>h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 52px;
+    font-weight: bolder;
+    padding-bottom: 20px;   
+}
+
+.left>p {
+    color: hsl(303, 10%, 53%);
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 180px;
+}
+
+.right {
+    margin-top: 25px;
+}
+
+.rt {
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    color: hsl(300, 43%, 22%);
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px 45px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    width: 380px;
+}
+
+.r2 {
+    margin-left: 50px;
+}
+
+.r3 {
+    margin-left: 100px;
+}
+
+.section-two {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.box {
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    padding: 15px 20px;
+    margin-right: 30px;
+    border-radius: 12px;
+    width: 320px;
+    max-width: 100%;
+    height: 220px;
+}
+
+.box-header {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.box-header-img>img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50px;
+}
+
+.box-header-contents {
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.box-header-contents>.pink {
+    color: hsl(333, 80%, 67%);
+}
+
+.box-body {
+    padding: 20px 0;
+    line-height: 22px;
+}
+
+.box2 {
+    margin-top: 20px;
+}
+
+.box3 {
+    margin-top: 40px;
+    margin-right: 0;
+}
+
+.attribution {
+    justify-content: center;
+}
+
+@media (max-width:600px) {
+
+    body{
+        background-size: 100% 10%, 100% 65%;
+    }
+
+    .container {
+        position: relative;
+        margin: 20px 15px ;
+        margin-right: 15px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    
+    .section-one{
+        margin-top: 40px;
+        margin-right: 15px;
+        display: block;
+        justify-content: center;
+    }
+
+    .left {
+        text-align: center;
+    }
+
+    .left>h1 {
+        font-size: 32px;
+        font-weight: bolder;
+    }
+
+    .left>p {
+        line-height: 20px;
+        text-align: center;
+        margin: 0;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right {
+        display: block;
+    }
+
+    .rt {
+        justify-content: center;
+        display: block;
+        margin: 20px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .section-two{
+        display: block;
+        justify-content: center;
+        margin-right: 15px;
+    }
+
+    .box3 {
+        margin-top: 20px;
+    }
+
+    .attribution {
+        font-size: 12px;
+        text-align: center;
+        padding: 20px;
+        padding-top: 0;
+    }
+}
